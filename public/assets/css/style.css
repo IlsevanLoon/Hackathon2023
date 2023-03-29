@@ -7,23 +7,19 @@
 
 /* Gebruik Fira Sans als lettertype */
 body {
-	font-family: 'Fira Sans', sans-serif;
+	font-family: "Fira Sans", sans-serif;
 }
 
-/* Set de regelafstand op 1,15 */
-.navbar-nav {
+/* Zet de regelafstand op 1,15 */
+.navbar {
 	line-height: 1.15;
 }
-
-/* Gebruik roze en blauw als kleuren */
-.navbar-dark {
-	background-color: #203261;
+.nav_hover
+{
+	color: black;
+	font-weight: bold;
 }
 
-.navbar-nav .nav-link {
-	color: #fff;
-}
-
-.navbar-nav .nav-link:hover {
-	color: #E50066;
+.nav_hover:hover{
+	color: #e53f66;
 }

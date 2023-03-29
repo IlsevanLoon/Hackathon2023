@@ -55,4 +55,27 @@ abstract class BaseController extends Controller
 
         // E.g.: $this->session = \Config\Services::session();
     }
+
+    function add_js($file = '')
+    {
+        if (is_file("assets/js/".$file) == true){
+            $this->viewData["assets"]["js"][] = "assets/js/" . $file;
+        }
+    }
+
+    function add_css($file = '')
+    {
+        if (is_file("assets/css/".$file) == true){
+            $this->viewData["assets"]["css"][] = "assets/css/" . $file;
+        }
+    }
+
+    function load_bundle($bundle){
+        $bundle = strtolower($bundle);
+        switch ($bundle) {
+            case "datatables":
+                $this->add_css("plugins/dataTables/datatables.css");
+                $this->add_js("plugins/dataTables/datatables.js");
+        }
+    }
 }
