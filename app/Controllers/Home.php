@@ -18,3 +18,4 @@ class Home extends BaseController
         return view('template', $this->viewData);
     }
 }
+
