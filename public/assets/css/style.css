@@ -1,0 +1,29 @@
+.card{
+	width: 150px;
+	height: 150px;
+	border: 5px,black,solid;
+	margin: 35px;
+}
+
+/* Gebruik Fira Sans als lettertype */
+body {
+	font-family: 'Fira Sans', sans-serif;
+}
+
+/* Set de regelafstand op 1,15 */
+.navbar-nav {
+	line-height: 1.15;
+}
+
+/* Gebruik roze en blauw als kleuren */
+.navbar-dark {
+	background-color: #203261;
+}
+
+.navbar-nav .nav-link {
+	color: #fff;
+}
+
+.navbar-nav .nav-link:hover {
+	color: #E50066;
+}
