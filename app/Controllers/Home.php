@@ -11,6 +11,7 @@ class Home extends BaseController
 
     public function index()
     {
+        $this->add_js('Home/home.js');
         $this->viewData['test'] = $this->test->get();
         $this->viewData['view'] = "home.php";
         $this->viewData['title'] = "Home";

@@ -14,3 +14,12 @@ body {
 .navbar {
 	line-height: 1.15;
 }
+.nav_hover
+{
+	color: black;
+	font-weight: bold;
+}
+
+.nav_hover:hover{
+	color: #e53f66;
+}
