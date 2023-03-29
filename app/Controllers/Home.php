@@ -12,7 +12,9 @@ class Home extends BaseController
     public function index()
     {
         $this->viewData['test'] = $this->test->get();
+        $this->viewData['view'] = "home.php";
+        $this->viewData['title'] = "Home";
 
-        return view('overview.php', $this->viewData);
+        return view('template', $this->viewData);
     }
 }

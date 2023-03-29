@@ -6,6 +6,6 @@ use CodeIgniter\Model;
 class test extends Model
 {
     public function get(){
-        return $this->db->query("SELECT * FROM `formexample`")->getResult();
+        return $this->db->query("SELECT * FROM `posts`")->getResult();
     }
 }
