@@ -15,6 +15,7 @@
     ?>
     <script src="/assets/js/jquery-3.6.3.js"></script>
     <script src="/assets/js/bootstrap.js"></script>
+    <script src="/assets/js/Home/home.js"></script>
 </head>
 <div class="top-bar"></div>
 <nav class="navbar navbar-expand-lg navbar-white bg-white">
@@ -100,7 +101,16 @@
     </div>
 </div>
 
-<button id="chat-widget-button" class="chat-widget-button" onclick="showChatWidget()">Chat</button>
+<div class="widget-position-right">
+    <div class="widgetLabel" id="chat-widget-button" onclick="showChatWidget()">
+        <span>Chat with us</span>
+        <img src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/12.1.1/72x72/1f44b.png" alt="👋" class="emoji">
+    </div>
+</div>
+
+
+<img id="chat-widget-button" class="chat-widget-button" src="/assets/img/hart-sterkhuis.png" alt="Chat" onclick="showChatWidget()">
+
 
 
 </body>
