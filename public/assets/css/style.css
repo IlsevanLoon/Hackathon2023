@@ -9,8 +9,9 @@
 body {
 	font-family: "Fira Sans", sans-serif;
 	font-weight: bold;
+	overflow-x: hidden;
 }
-
+/*#region header*/
 .top-bar
 {
 	height: 40px;
@@ -35,7 +36,7 @@ body {
 
 #dropdown {
 	padding-left: 10px;
-	width: 15%;
+	width: 345px;
 	display: none;
 	margin: 306px 20% 0px;
 	flex-direction: column;
@@ -127,10 +128,10 @@ body {
 	{
 		margin-left: -50px;
 	}
-
 }
+/*#endregion Header*/
 
-/*Style for the chat*/
+/*#region Live chat*/
 #chat-widget {
 	display: none;
 	position: fixed;
@@ -319,4 +320,131 @@ body {
 	line-height: 22px;
 	vertical-align: middle;
 }
+/*#endregion Live chat*/
 
+/*#region home page*/
+.main-img-homepage {
+	width: 100%;
+	z-index: -1;
+}
+
+.container {
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+.main-quote {
+	font-family: Impact;
+	position: absolute;
+	text-align: center;
+	white-space: pre-line;
+	letter-spacing: 0.55vw;
+	font-size: 4vw;
+	width: 50vw;
+	left: 25%;
+	top: 15vw;
+	transform: translateX(-50%);
+}
+
+.main-quote::before {
+	content: attr(data-text);
+	position: absolute;
+	left: -0.6vw;
+	top: -0.2vw;
+	color: #e60066;
+}
+
+.main-quote::after {
+	content: attr(data-text);
+	position: absolute;
+	left: 0;
+	top: 0;
+	color: white;
+}
+.scroll-btn {
+	position: absolute;
+	bottom: 5%;
+	left: 25%;
+	transform: translateX(-50%);
+	padding: 1vw 2vw;
+	border: 2px solid white;
+	border-radius: 2vw;
+	color: white;
+	text-decoration: none;
+	background-color: transparent;
+	transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.scroll-btn:hover {
+	background-color: white;
+	color: #e60066;
+}
+
+@media (max-width: 768px) {
+	.main-quote {
+
+		font-size: 20px;
+		width: 80%;
+		left: 30%;
+		top: 23%;
+		transform: translate(-50%, -50%);
+		letter-spacing: 5px;
+	}
+
+	.scroll-btn {
+		position: absolute;
+		bottom: 60%;
+		left: 30%;
+		transform: translateX(-50%);
+		border: 2px solid white;
+		border-radius: 2vw;
+		color: white;
+		text-decoration: none;
+		background-color: transparent;
+		transition: background-color 0.3s ease, color 0.3s ease;
+	}
+}
+
+
+
+/*#endregion home page*/
+
+/*#regionFooter*/
+footer {
+	background-color: #191B35;
+	color: #ffffff;
+	padding: 50px 0;
+	font
+}
+
+footer a {
+	color: #ffffff;
+	transition: color 0.5s ease-in-out;
+}
+
+footer a:hover {
+	color: #e60066;
+}
+
+footer h4 {
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+footer ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+footer ul li {
+	margin-bottom: 10px;
+}
+
+footer ul li a i {
+	font-size: 24px;
+	margin-right: 10px;
+}
+
+
+/*#endregion Footer*/

@@ -112,6 +112,37 @@
 <img id="chat-widget-button" class="chat-widget-button" src="/assets/img/hart-sterkhuis.png" alt="Chat" onclick="showChatWidget()">
 
 
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h4>Contactgegevens</h4>
+                <p>Adres: Voorbeeldstraat 1, 1234 AB Amsterdam</p>
+                <p>Telefoon: 06-12345678</p>
+                <p>E-mail: info@voorbeeld.nl</p>
+            </div>
+            <div class="col-md-4">
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Over ons</a></li>
+                    <li><a href="#">Diensten</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h4>Social media</h4>
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
 
 </body>
 </html>
