@@ -34,6 +34,8 @@ class Posts extends BaseController
         $content = $this->request->getPost('content');
 
         $this->post->add_save($title, $categories, $content);
+
+        return redirect()->to('Posts/index');
     }
 }
 

@@ -13,6 +13,7 @@ class post extends Model
             LEFT JOIN `categories` ON `categories`.`id` = `post_categories`.`category_id` AND `categories`.`deleted_at` = '0000-00-00 00:00:00'
             ")->getResult();
             $posts = array();
+            $i = 0;
             foreach ($result as $row) {
                 $post_id = $row->post_id;
                 $category_id = $row->category_id;
@@ -21,9 +22,9 @@ class post extends Model
                 $post_gender = $row->gender;
                 $categories = $row->name;
 
-                if (!isset($posts[$post_id])) {
+                if (!isset($posts[$i])) {
                     // If this is a new brand, create a new array for it
-                    $posts[$post_id] = array(
+                    $posts[$i] = array(
                         'post_id' => $post_id,
                         'category_id' => $category_id,
                         'title' => $post_title,
@@ -35,7 +36,8 @@ class post extends Model
                 }
                 
                 // Add the hardware type to the current brand's array
-                $posts[$post_id]['categories'][] = $categories;
+                $posts[$i]['categories'][] = $categories;
+                $i++;
             }
                 return $posts;
     }
