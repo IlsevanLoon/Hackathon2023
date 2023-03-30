@@ -15,6 +15,7 @@
     ?>
     <script src="/assets/js/jquery-3.6.3.js"></script>
     <script src="/assets/js/bootstrap.js"></script>
+    <script src="/assets/js/Home/home.js"></script>
 </head>
 <div class="top-bar"></div>
 <nav class="navbar navbar-expand-lg navbar-white bg-white">
