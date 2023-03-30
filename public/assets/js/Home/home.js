@@ -75,3 +75,9 @@ function displayMessages() {
 }
 
 setInterval(displayMessages, 100); // Update chat widget every 100ms
+
+
+function scrollToSection() {
+    var section = document.querySelector('.section-1');
+    section.scrollIntoView({behavior: "smooth"});
+}
