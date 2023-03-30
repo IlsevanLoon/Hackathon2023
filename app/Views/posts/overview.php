@@ -25,7 +25,7 @@
 			</div>
 		</div>
 		<?php } ?>
-	<div class="card filters" style="width: 18rem;">
+	<div class="card filters sticky-top" style="width: 18rem;">
 	  <ul class="list-group list-group-flush">
 	  	<li class="list-group-item bg-primary">Filters</li>
 		<?php foreach($categories as $category):?>	    

@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container text-white" style="background-color: #203261FF;">
 	<form action="/posts/add_save" method="POST">
 	  <div class="form-group">
 	    <label for="title">Titel</label>
@@ -17,6 +17,6 @@
 	      <label for="content" class="form-label mt-4">Jouw verhaal</label>
 	      <textarea class="form-control" id="content" rows="15" name="content"></textarea>
 	    </div>
-		<button type="submit" class="btn btn_sh">Verstuur</button>
+		<button style="margin-bottom:10px" type="submit" class="btn btn_sh">Verstuur</button>
 	</form>
 </div>

@@ -20,7 +20,7 @@ class Posts extends BaseController
     }
 
     public function add(){
-        
+        $this->add_js('posts/overview.js');
         $this->viewData['categories'] = $this->post->get_categories();
         $this->viewData['view'] = "posts/add.php";
         $this->viewData['title'] = "Toevoegen";
