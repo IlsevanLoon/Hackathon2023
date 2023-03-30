@@ -1,18 +1,27 @@
 .card{
 	width: 150px;
 	height: 150px;
-	border: 5px,black,solid;
+	border: 5px, black, solid;
 	margin: 35px;
 }
 
 /* Gebruik Fira Sans als lettertype */
 body {
 	font-family: "Fira Sans", sans-serif;
+	font-weight: bold;
+}
+
+.top-bar
+{
+	height: 40px;
+	background: #191B35;
 }
 
 /* Zet de regelafstand op 1,15 */
 .navbar {
 	line-height: 1.15;
+	border: 0px solid black;!important;
+	font-size: 20px;
 }
 .nav_hover
 {
@@ -22,4 +31,240 @@ body {
 
 .nav_hover:hover{
 	color: #e53f66;
+}
+
+#dropdown {
+	padding-left: 10px;
+	width: 15%;
+	display: none;
+	margin: 306px 20% 0px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.dropdown_button
+{
+	margin-top: 15px;!important;
+	margin-left: 30px;!important;
+}
+
+.nav-item
+{
+	margin-left: 50px;!important;
+}
+
+/* Styles for search form */
+.find-search {
+
+	position: relative;
+	display: flex;
+	align-items: center;
+	max-width: 300px;
+}
+
+/* Styles for search input */
+.search-input {
+	font-family: "Fira Sans", sans-serif;
+	font-weight: bold;
+	flex-grow: 1;
+	padding: 10px;
+	border: none;
+	background-color: #eee;
+	color: #333;
+	font-size: 16px;
+}
+
+/* Styles for search button */
+.search-button {
+	font-family: "Fira Sans", sans-serif;
+	font-weight: bold;
+	margin-left: 15px;
+	padding: 10px;
+	background-color: #e60066;
+	border: none;
+	border-radius: 20px; /* Added border-radius property */
+	cursor: pointer;
+	transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+	color: #fff;
+}
+
+.search-button:hover {
+	background-color: #fff;
+	color: #e60066;
+}
+
+.text-search
+{
+	color: #203261FF;
+	font-family: "Fira Sans", sans-serif;
+	font-weight: bold;
+	font-size: 25px;
+}
+.text-search2
+{
+	color: #203261FF;
+	font-family: "Fira Sans", sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+	margin-bottom: -10px;
+}
+
+@media screen and (max-width: 991px) {
+	#dropdown {
+		display: flow-root;
+		width: 355px;
+		margin: 15px -10% 0px;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.navbar-toggler {
+		width: 100px;
+	}
+	.navbar-collapse
+	{
+		margin-left: -50px;
+	}
+
+}
+
+/*Style for the chat*/
+#chat-widget {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	width: 300px;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+	z-index: 999;!important;
+	transition: all 0.3s ease-in-out;
+}
+
+#chat-widget-header {
+	padding: 10px;
+	background-color: #203261FF;
+	color: #fff;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+#chat-widget-header h3 {
+	margin: 0;
+	font-size: 1.2rem;
+}
+
+.close-button {
+	background: none;
+	border: none;
+	color: #fff;
+	font-size: 1.2rem;
+	cursor: pointer;
+	outline: none;
+	float: right;
+}
+
+#chat-widget-body {
+	padding: 10px;
+	max-height: 200px;
+	overflow-y: scroll;
+}
+
+#chat-widget-input {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	border: none;
+	border-top: 1px solid #ddd;
+	resize: none;
+	margin-bottom: 5px;
+}
+
+#chat-widget-footer {
+	padding: 10px;
+	text-align: right;
+	display: grid;
+}
+
+#chat-widget-footer button {
+	background-color: #e60066;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+
+#chat-widget-footer button:hover {
+	background-color: #203261FF;
+}
+
+.chat-widget-button {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	background-color: #203261FF;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+
+.chat-widget-button:hover {
+	background-color: #e60066;
+}
+
+.chat-widget-hidden {
+	display: none;
+}
+
+.close-button {
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-size: 24px;
+	font-weight: bold;
+	color: #ffffff;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	z-index: 1;
+}
+
+.fixed {
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+}
+
+#chat-widget-body .message-received::before {
+	content: "";
+	position: absolute;
+	left: -10px;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-right: 10px solid #fff;
+	transform: translateY(-50%);
+}
+
+#chat-widget-body .message-sent::after {
+	content: "";
+	position: absolute;
+	right: -10px;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-left: 10px solid #3a86ff;
+	transform: translateY(-50%);
 }
