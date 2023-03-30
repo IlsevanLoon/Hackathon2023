@@ -268,3 +268,17 @@ body {
 	border-left: 10px solid #3a86ff;
 	transform: translateY(-50%);
 }
+.filters{
+	position: absolute;
+	top: 45px;
+	left: -35px;
+}
+
+.btn_sh{
+	color: white;
+	background-color: #e53f66;
+}
+
+.btn_sh:hover{
+	color: #e53f66;
+}

@@ -13,26 +13,26 @@
       echo load_css($assets['css']);
     }
     ?>
-    <script src="assets/js/jquery-3.6.3.js"></script>
-    <script src="assets/js/bootstrap.js"></script>
+    <script src="/assets/js/jquery-3.6.3.js"></script>
+    <script src="/assets/js/bootstrap.js"></script>
 </head>
 <div class="top-bar"></div>
 <nav class="navbar navbar-expand-lg navbar-white bg-white">
     <div class="container-fluid" style="width: 50%">
-
-        <img src="assets/img/Logo-Sterk-Huis-payoff-onder.png" href="index.php" style="width: 100px; margin-right: 10%;">
+        <img src="/assets/img/Logo-Sterk-Huis-payoff-onder.png" href="Home/" style="width: 80px; margin-right: 10%;">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarColor03">
             <ul class="navbar-nav me-auto">
                 <li class="nav-item">
-                    <a class="nav-link nav_hover" href="index.php">Home
+                    <a class="nav-link nav_hover" href="/Home/">Home
                         <span class="visually-hidden">(current)</span>
                     </a>
                 </li>
-                <li class="nav-item" style="margin-left: 50px"">
-                    <a class="nav-link nav_hover" href="index.php">Features</a>
+
+                <li class="nav-item">
+                    <a class="nav-link nav_hover" href="/Posts/">Posts</a>
                 </li>
                 <li class="nav-item" style="margin-left: 50px">
                     <a class="nav-link nav_hover" href="index.php">Pricing</a>
