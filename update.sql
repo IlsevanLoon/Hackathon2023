@@ -1,1 +1,6 @@
 CREATE TABLE `hackathon2023`.`posts` ( `id` INT NOT NULL AUTO_INCREMENT , `title` VARCHAR(255) NOT NULL , `content` TEXT NOT NULL , `gender` VARCHAR(255) NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;
+CREATE TABLE `hackathon2023`.`categories` ( `id` INT NOT NULL AUTO_INCREMENT , `name` VARCHAR(255) NOT NULL , `created_at` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP , `updated_at` DATETIME NOT NULL , `deleted_at` DATETIME NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;
+CREATE TABLE `hackathon2023`.`post_categories` ( `id` INT NOT NULL AUTO_INCREMENT , `post_id` INT NOT NULL , `category_id` INT NOT NULL , `created_at` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP , `updated_at` DATETIME NOT NULL , `deleted_at` DATETIME NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;
+INSERT INTO `categories` (`id`, `name`, `created_at`, `updated_at`, `deleted_at`) VALUES (NULL, "Naaktfoto's gelekt", current_timestamp(), '0000-00-00 00:00:00.000000', '0000-00-00 00:00:00.000000')
+INSERT INTO `categories` (`id`, `name`, `created_at`, `updated_at`, `deleted_at`) VALUES (NULL, 'Zelfmoordneigingen', current_timestamp(), '0000-00-00 00:00:00.000000', '0000-00-00 00:00:00.000000')
+INSERT INTO `categories` (`id`, `name`, `created_at`, `updated_at`, `deleted_at`) VALUES (NULL, 'Bedreigingen', current_timestamp(), '0000-00-00 00:00:00.000000', '0000-00-00 00:00:00.000000')
