@@ -22,7 +22,7 @@ $(document).ready(function() {
 let messages = [
     {
         sender: "Sterk Huis",
-        message: "Welcome to our live chat. How may we assist you?"
+        message: "Welkom in de live chat, hier kunt u anoniem met een van onze getrainde medewerkers spreken."
     }
 ];
 
@@ -36,6 +36,7 @@ function hideChatWidget() {
     document.getElementById("show-chat-widget").style.display = "block";
 }
 
+
 function sendMessage() {
     let messageInput = document.getElementById("chat-widget-input");
     let message = messageInput.value;
@@ -44,17 +45,21 @@ function sendMessage() {
         messages.push({
             sender: "Jij",
             message: message
+
         });
 
         messageInput.value = "";
 
         // Simulate response after 1 second
-        setTimeout(function() {
-            messages.push({
-                sender: "Sterk Huis",
-                message: "Thank you for your message."
-            });
-        }, 1000);
+        if (!messages.find(m => m.message === "Bedankt voor uw bericht, een mederwerker is onderweg om u verder te helpen met uw vraag!")) {
+            setTimeout(function() {
+                messages.push({
+                    sender: "Sterk Huis",
+                    message: "Bedankt voor uw bericht, een mederwerker is onderweg om u verder te helpen met uw vraag!"
+                });
+
+            }, 2000);
+        }
     }
 }
 
@@ -63,14 +68,10 @@ function displayMessages() {
     let chatWidgetHTML = "";
 
     messages.forEach(function(message) {
-        chatWidgetHTML += `<p><strong>${message.sender}: </strong>${message.message}</p>`;
+        chatWidgetHTML += `<div class="message-bubble"><p><strong>${message.sender}: </strong>${message.message}</p></div>`;
     });
 
     chatWidgetBody.innerHTML = chatWidgetHTML;
-
-    // Scroll to the bottom of the chat widget
-    chatWidgetBody.scrollTop = chatWidgetBody.scrollHeight;
 }
 
 setInterval(displayMessages, 100); // Update chat widget every 100ms
-

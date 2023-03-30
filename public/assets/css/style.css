@@ -132,6 +132,7 @@ body {
 
 /*Style for the chat*/
 #chat-widget {
+	display: none;
 	position: fixed;
 	bottom: 20px;
 	right: 20px;
@@ -206,17 +207,18 @@ body {
 	position: fixed;
 	bottom: 20px;
 	right: 20px;
-	background-color: #203261FF;
+	background-color: rgba(32, 50, 97, 0);
 	color: #fff;
 	border: none;
 	padding: 10px 20px;
 	border-radius: 5px;
 	cursor: pointer;
 	transition: all 0.3s ease-in-out;
+	width: 115px;
 }
 
 .chat-widget-button:hover {
-	background-color: #e60066;
+	background-color: rgba(230, 0, 102, 0);
 }
 
 .chat-widget-hidden {
@@ -286,5 +288,35 @@ body {
 
 .btn_sh:hover{
 	color: #e53f66;
+}
+
+.widget-position-right {
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+}
+
+.widgetLabel {
+	position: relative;
+	display: inline-block;
+	height: 42px;
+	border-radius: 16px;
+	padding: 10px 15px;
+	box-shadow: rgba(0, 18, 46, 0.24) 0px 6px 32px 0px;
+	background: rgb(255, 255, 255);
+	cursor: pointer;
+	right: 90px;
+}
+
+.widgetLabel img {
+	height: 22px;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+.widgetLabel span {
+	font-size: 17px;
+	line-height: 22px;
+	vertical-align: middle;
 }
 
