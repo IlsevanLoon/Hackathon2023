@@ -2,19 +2,16 @@
 
 namespace App\Controllers;
 
-class Home extends BaseController
+class Contacts extends BaseController
 {
     public function initController(\CodeIgniter\HTTP\RequestInterface $request, \CodeIgniter\HTTP\ResponseInterface $response, \Psr\Log\LoggerInterface $logger){
         parent::initController($request, $response, $logger);
     }
 
-    public function index()
-    {
-        $this->add_js('Home/home.js');
-        $this->viewData['view'] = "home.php";
-        $this->viewData['title'] = "Sterk Huis | Home";
+    public function index(){
+        $this->viewData['view'] = "contacts/overview.php";
+        $this->viewData['title'] = "Home";
 
         return view('template', $this->viewData);
     }
 }
-

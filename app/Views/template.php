@@ -36,7 +36,7 @@
                     <a class="nav-link nav_hover" href="/Posts/">Posts</a>
                 </li>
                 <li class="nav-item" style="margin-left: 50px">
-                    <a class="nav-link nav_hover" href="index.php">Pricing</a>
+                    <a class="nav-link nav_hover" href="/Contacts/">Contact</a>
                 </li>
                 <li class="nav-item" style="margin-left:50px">
                     <a class="nav-link nav_hover" href="index.php">About</a>

@@ -273,7 +273,7 @@ body {
 .filters{
 
 	position: fixed;
-	top: 70px;
+	top: 75px;
 	left: -35px;
 	width: 100%;
 	background-color: #fff;
@@ -283,11 +283,11 @@ body {
 
 .btn_sh{
 	color: white;
-	background-color: #e53f66;
+	background-color: #e60066;
 }
 
 .btn_sh:hover{
-	color: #e53f66;
+	color: #e60066;
 }
 
 .widget-position-right {
