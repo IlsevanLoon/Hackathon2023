@@ -110,6 +110,16 @@ body {
 	font-size: 20px;
 	margin-bottom: -10px;
 }
+.show_filter{
+	display: none;
+}
+.filters{
+	display: block;
+}
+
+.info_tabs img{
+	width: 500px;
+}
 
 @media screen and (max-width: 991px) {
 	#dropdown {
@@ -128,6 +138,19 @@ body {
 	{
 		margin-left: -50px;
 	}
+
+	.show_filter{
+		display: inline-block;
+	}
+
+	.filters{
+		display: none;
+	}
+
+	.info_tabs img{
+		width: 350px;
+	}
+
 }
 /*#endregion Header*/
 

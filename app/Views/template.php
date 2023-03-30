@@ -33,16 +33,19 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link nav_hover" href="/Posts/">Posts</a>
+                    <a class="nav-link nav_hover" href="/Posts/">Verhalen</a>
+                </li>
+                <li class="nav-item" style="margin-left:50px">
+                    <a class="nav-link nav_hover" href="/Parents/">Ouders</a>
+                </li>
+                <li class="nav-item" style="margin-left:50px">
+                    <a class="nav-link nav_hover" href="/Victims/">Slachtoffers</a>
+                </li>
+                <li class="nav-item" style="margin-left:50px">
+                    <a class="nav-link nav_hover" href="/Perpetrators/">Daders</a>
                 </li>
                 <li class="nav-item" style="margin-left: 50px">
                     <a class="nav-link nav_hover" href="/Contacts/">Contact</a>
-                </li>
-                <li class="nav-item" style="margin-left:50px">
-                    <a class="nav-link nav_hover" href="index.php">About</a>
-                </li>
-                <li class="nav-item dropdown" style="margin-left: 50px">
-                    <a class="nav-link dropdown-toggle nav_hover" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
                 </li>
                 <li class="nav-item" style="margin: 7px 0px 0px 50px">
                     <a id="dropdown_button"><i class="fa-solid fa-magnifying-glass fa-lg"></i></a>
