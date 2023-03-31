@@ -16,7 +16,21 @@ $(document).ready(function() {
             $("#dropdown").hide();
         }
     });
+
+    $(".show_filter").on("click", show_filter);
 });
+
+function show_filter(){
+    if($(".filters").css('display') == 'block'){
+        $(".filters").hide();
+        return;
+    }
+
+    if($(".filters").css('display') == 'none'){
+        $(".filters").show();
+        return;
+    }
+}
 
 // Shows and hides the live chat
 let messages = [

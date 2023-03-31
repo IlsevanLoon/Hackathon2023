@@ -14,16 +14,15 @@ class Posts extends BaseController
         $this->viewData['categories'] = $this->post->get_categories();
         $this->viewData['posts'] = $this->post->get_all();
         $this->viewData['view'] = "posts/overview.php";
-        $this->viewData['title'] = "Home";
+        $this->viewData['title'] = "Sterk Huis | Verhalen";
 
         return view('template', $this->viewData);
     }
 
     public function add(){
-        
         $this->viewData['categories'] = $this->post->get_categories();
         $this->viewData['view'] = "posts/add.php";
-        $this->viewData['title'] = "Toevoegen";
+        $this->viewData['title'] = "Sterk Huis | Verhaal toevoegen";
 
         return view('template', $this->viewData);
     }

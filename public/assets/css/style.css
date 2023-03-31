@@ -110,6 +110,16 @@ body {
 	font-size: 20px;
 	margin-bottom: -10px;
 }
+.show_filter{
+	display: none;
+}
+.filters{
+	display: block;
+}
+
+.info_tabs img{
+	width: 500px;
+}
 
 @media screen and (max-width: 991px) {
 	#dropdown {
@@ -128,6 +138,19 @@ body {
 	{
 		margin-left: -50px;
 	}
+
+	.show_filter{
+		display: inline-block;
+	}
+
+	.filters{
+		display: none;
+	}
+
+	.info_tabs img{
+		width: 350px;
+	}
+
 }
 /*#endregion Header*/
 
@@ -272,18 +295,23 @@ body {
 	transform: translateY(-50%);
 }
 .filters{
-	position: absolute;
-	top: 45px;
+
+	position: fixed;
+	top: 75px;
 	left: -35px;
+	width: 100%;
+	background-color: #fff;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+	z-index: 9999;
 }
 
 .btn_sh{
 	color: white;
-	background-color: #e53f66;
+	background-color: #e60066;
 }
 
 .btn_sh:hover{
-	color: #e53f66;
+	color: #e60066;
 }
 
 .widget-position-right {
