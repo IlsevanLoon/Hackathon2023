@@ -64,6 +64,10 @@ body {
 	max-width: 300px;
 }
 
+.select2-selection__choice__display {
+  color: black !important;
+}
+
 /* Styles for search input */
 .search-input {
 	font-family: "Fira Sans", sans-serif;

@@ -7,10 +7,9 @@
 		  </div>
 		    <div class="form-group">
 		      <label for="categories" class="form-label">Categorie</label>
-		      <select class="form-select" id="categories" name="categories[]">
-		      	<option disabled selected>Kies een categorie</option>
+		      <select class="form-select" id="categories" name="categories[]" multiple="multiple" style="color:black;">
 		      	<?php foreach($categories as $category):?>
-		      	<option value="<?=$category->id?>" ><?=$category->name?></option>
+		      	<option style="color:black;" value="<?=$category->id?>" ><?=$category->name?></option>
 		      	<?php endforeach;?>
 		      </select>
 		    </div>

@@ -1,7 +1,7 @@
 <div class="container-fluid text-white" style="background-color: #203261FF; display:flex; justify-content:center;">
 	<div class="conatiner w-70 text-center" style="width:1000px">
 		<div class="form-group"><p>Vul hier jouw email in samen met jouw bericht en wij proberen zo snel mogelijk te antwoorden.</p></div>
-		<form action="/posts/add_save" method="POST">
+		<form action="" method="POST">
 		  <div class="form-group">
 		    <label for="title">Titel</label>
 		    <input type="text" class="form-control" id="title" name="title" placeholder="Vul hier de titel in">

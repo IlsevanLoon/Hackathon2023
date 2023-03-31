@@ -10,7 +10,6 @@ class Posts extends BaseController
     }
 
     public function index(){
-
         $this->viewData['categories'] = $this->post->get_categories();
         $this->viewData['posts'] = $this->post->get_all();
         $this->viewData['view'] = "posts/overview.php";
@@ -34,7 +33,7 @@ class Posts extends BaseController
 
         $this->post->add_save($title, $categories, $content);
 
-        return redirect()->to('Posts/index');
+        return redirect()->to('/Posts/index');
     }
 }
 

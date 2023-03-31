@@ -1,5 +1,12 @@
 
 $(document).ready(function() {
+    $('#categories').select2();
+    $("#categories").select2({
+        placeholder: "Kies een categorie",
+        allowClear: true
+    });
+
+
     // Click handler for the dropdown button
     $("#dropdown_button").on("click", function(e) {
         // Prevent the default click behavior

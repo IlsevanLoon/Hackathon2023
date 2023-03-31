@@ -7,7 +7,7 @@
     <script src="https://kit.fontawesome.com/60304f5951.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://bootswatch.com/5/lumen/bootstrap.min.css">
     <link rel="stylesheet" href="/assets/css/style.css">
-
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <?php 
     if(isset($assets['css'])){
       echo load_css($assets['css']);
@@ -16,6 +16,7 @@
     <script src="/assets/js/jquery-3.6.3.js"></script>
     <script src="/assets/js/bootstrap.js"></script>
     <script src="/assets/js/Home/home.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 </head>
 <div class="top-bar"></div>
 <nav class="navbar navbar-expand-lg navbar-white bg-white">
@@ -111,8 +112,8 @@
     </div>
 </div>
 
-
-<img id="chat-widget-button" class="chat-widget-button" src="/assets/img/hart-sterkhuis.png" alt="Chat" onclick="showChatWidget()">
+<div id="chat-widget-button" class="chat-widget-button btn btn-primary" alt="Chat" onclick="showChatWidget()" alt="Chat"><i class="fa-solid fa-message"></i></div>
+<!-- <img id="chat-widget-button" class="chat-widget-button" src="/assets/img/hart-sterkhuis.png" alt="Chat" onclick="showChatWidget()"> -->
 
 
 <footer>

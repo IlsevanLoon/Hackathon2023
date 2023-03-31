@@ -35,7 +35,7 @@
 			            <div class="card-body">
 			                <h4 class="card-title"><?=$post['title']?></h4>
 			                <h6 class="card-subtitle mb-2"><i><?php foreach($post['categories'] as $category) echo $category . ", "?></i></h6>
-			                <p class="card-text"><?=$post['content']?></p>
+			                <p class="card-text"><?= nl2br($post['content'])?></p>
 			            </div>
 			        </div>
 			    <?php endforeach; ?>
