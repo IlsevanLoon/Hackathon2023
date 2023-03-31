@@ -1,5 +1,5 @@
 <div class="container-fluid info_tabs text-white" style="background-color: #203261FF;">
-	<div class="text-center"><h1 class="text-center">Ouders</h1>
+	<div class="text-center"><h1 class="text-center">Daders</h1>
 		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, 
 		</p>
 		<img src="/assets/img/placeholder.png">

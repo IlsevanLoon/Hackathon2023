@@ -112,8 +112,8 @@
     </div>
 </div>
 
-<div id="chat-widget-button" class="chat-widget-button btn btn-primary" alt="Chat" onclick="showChatWidget()" alt="Chat"><i class="fa-solid fa-message"></i></div>
-<!-- <img id="chat-widget-button" class="chat-widget-button" src="/assets/img/hart-sterkhuis.png" alt="Chat" onclick="showChatWidget()"> -->
+
+<img id="chat-widget-button" class="chat-widget-button" src="/assets/img/hart-sterkhuis.png" alt="Chat" onclick="showChatWidget()">
 
 
 <footer>

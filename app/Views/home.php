@@ -81,7 +81,7 @@
     <div class="parents-info">
         <div class="info-style">
             <div class="info-style-img-and-title">
-                <H1 class="text-info-small-title">Pester</H1>
+                <H1 class="text-info-small-title">Dader</H1>
                 <img src="/assets/img/bully-teenager.jpg" alt="image of parents" class="main-info-img-all">
             </div>
             <div class="container-all-info-text">
@@ -92,8 +92,8 @@
                         blijf alert op je eigen gedrag en grijp in als je getuige bent van online pestgedrag.</P>
                 </div>
                 <div class="helpen-achteraf">
-                    <H3 class="text-info-small">Ik ben zelf de pester.. Wat kan ik doen?</H3>
-                    <P class="text-info-small">Als je de pester bent in een situatie van online sexting misbruik, stop dan met pesten,
+                    <H3 class="text-info-small">Ik ben zelf de dader.. Wat kan ik doen?</H3>
+                    <P class="text-info-small">Als je de dader bent in een situatie van online sexting misbruik, stop dan met pesten,
                         bied excuses aan aan het slachtoffer en neem verantwoordelijkheid voor je acties. Leer over online veiligheid
                         en respectvolle communicatie en vermijd gedrag dat anderen kan kwetsen of schaden. Online pesten is niet acceptabel
                         en kan consequenties hebben, werk eraan om een positieve bijdrage te leveren aan online gemeenschappen.</P>
