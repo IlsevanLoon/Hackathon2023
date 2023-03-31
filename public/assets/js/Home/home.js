@@ -95,3 +95,7 @@ function scrollToSection() {
     var section = document.querySelector('.section-1');
     section.scrollIntoView({behavior: "smooth"});
 }
+
+
+
+

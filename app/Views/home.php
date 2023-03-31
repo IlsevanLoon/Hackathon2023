@@ -13,17 +13,18 @@
 <div class="container">
     <h1 class="main-quote" data-text="Hulp zoeken kan anoniem, laat de schaamte los."></h1>
 </div>
-<a href="#Info" class="scroll-btn">Wij helpen u graag!<i class="fa fa-angle-down"></i></a>
+<a href="#Info" class="scroll-btn">Doe uw verhaal!<i class="fa fa-angle-down"></i></a>
 
 
 <!-- Andere inhoud van de pagina hier -->
-<div class="container-small-info-page info" id="Info">
+<div class="container-small-info-page info" >
 <div class="info-home-page">
     <div class="parents-info">
         <div class="info-style">
             <div class="info-style-img-and-title">
                 <H1 class="text-info-small">Ikzelf</H1>
                 <img src="/assets/img/worried-teenager.jpg" alt="image of parents" class="main-info-img-all">
+                <a href="victims" class="scroll-btn-info">Meer info..<i class="fa fa-angle-down"></i></a>
             </div>
             <div class="container-all-info-text"  >
             <div class="voorkomen">
@@ -74,6 +75,7 @@
             <div class="info-style-img-and-title">
                 <H1 class="info-style-img-and-title">Ouders</H1>
                 <img src="/assets/img/worried-parents.png" alt="image of worried parents" class="main-info-img-all">
+                <a href="Parents" class="scroll-btn-info">Meer info..<i class="fa fa-angle-down"></i></a>
             </div>
         </div>
     </div>
@@ -83,6 +85,7 @@
             <div class="info-style-img-and-title">
                 <H1 class="text-info-small-title">Pester</H1>
                 <img src="/assets/img/bully-teenager.jpg" alt="image of parents" class="main-info-img-all">
+                <a href="Predetrators" class="scroll-btn-info">Meer info..<i class="fa fa-angle-down"></i></a>
             </div>
             <div class="container-all-info-text">
                 <div class="voorkomen">
@@ -103,5 +106,23 @@
     </div>
 </div>
 </div>
+
+<div class="container-doe-je-verhaal" id="Info">
+    <div class="image-container">
+        <img src="/assets/img/typing.jpg" alt="image of a scared kid" class="main-img-homepage-doe-je-verhaal">
+        <div class="text-container">
+            <div class="text-help-me">
+                <h1 class="main-quote-doe-je-verhaal">Hier kunt u uw verhaal veilig en anoniem doen. Hier kun je ook andere mensen mee helpen!</h1>
+            </div>
+            <div class="btn-help-me">
+                <a href="Posts/add" class="scroll-btn-doe-je-verhaal">Doe uw verhaal..<i class="fa fa-angle-down"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
 </body>
 </html>
