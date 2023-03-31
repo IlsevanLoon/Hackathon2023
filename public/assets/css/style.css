@@ -402,6 +402,88 @@ body {
 }
 
 
+.container-small-info-page
+{
+
+	background: #203261;
+}
+
+.info-home-page {
+
+	width: 90%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.parents-info {
+	font-family: "Fira Sans", sans-serif;
+	font-weight: bold;
+	width: 100%;
+	background-color: #e60066;
+	color: #FFFFFF;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	margin: 20px;
+	padding: 20px;
+	text-align: justify;
+
+}
+
+.info-style {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin: 20px;
+}
+
+.main-info-img-all {
+	width: 200px;
+	height: auto;
+	margin-right: 20px;
+}
+
+.container-all-info-text {
+	display: flex;
+	flex-direction: column;
+	width: calc(100% - 220px);
+}
+
+.voorkomen, .helpen-achteraf {
+	margin-bottom: 20px;
+}
+
+.text-info-small {
+	font-size: 30px;
+	font-weight: bold;
+	margin: 0;
+}
+
+.text-info-small-title
+{
+align-items: center;
+}
+p.text-info-small {
+	font-size: 14px;
+	margin: 0;
+}
+
+.info-style-img-and-title{
+	margin: 0px 20px 0px 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*#endregion home page*/
 
